@@ -80,3 +80,8 @@ button:focus {
   outline: none;
   background-color: #5e3370;
 }
+
+#word_time,
+#time001 {
+  font-size: 30px;
+}

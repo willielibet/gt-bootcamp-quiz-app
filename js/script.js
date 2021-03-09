@@ -50,7 +50,7 @@ let currentQuestion = 0
 let score = 0
 
 loadQuiz()
-
+//initializing the timer counter
 c = 40;
 
 function loadQuiz() {
@@ -120,7 +120,6 @@ submitBtn.addEventListener('click', () => {
             c = c - 5;
         }
 
-
         //then go on from the current question to the next question.
         currentQuestion++
 
@@ -134,8 +133,8 @@ submitBtn.addEventListener('click', () => {
         quiz.innerHTML = `  
             <h2>You answered ${score}/${quizQuestions.length} questions.<br/>
             Your score is ${c} points</h2>
-
-            <button onclick="location.reload("../index.html")
+            <a href="./quiz.html">
+            <button onclick="location.reload("index.html")
             ">Reload</button>
             `
         } //<button onclick="location.reload() ==> this button reloads the quiz app to start over.
@@ -144,7 +143,7 @@ submitBtn.addEventListener('click', () => {
 
 //timer
 function timer001() {
-    // window.location.replace("quiz.html");
+
     c = c - 1;
     if (c < 40) {
         time001.innerHTML = c;
@@ -160,24 +159,7 @@ function timer001() {
 //Source: https://www.sitepoint.com/community/t/want-timer-to-start-on-button-click-always-starts-on-load-why/291783/3
 // function startTimer() {
 //     update = setInterval(function(){timer001()}, 1000);
-//     // window.location.replace("quiz.html");
+// 
 // }
 update = setInterval("timer001()", 1000);
-
-// var timeLimit = 10;
-// var startTime = Date.now(); //get the time at the moment a user first sees the question
-// clearInterval(trivia.countDown);
-// trivia.countDown = setInterval(function () {
-//   if (trivia.state == "question") { //ensure the user has not already answered
-//     var elapsedTime = (Date.now() - startTime)/1000; //calculate the time elapsed
-//     var clock = timeLimit - Math.floor(elapsedTime);//calculate the countdown w/o decimals
-//     $('#timer').html(clock);// place the clock time in the html for viewing
-//     if (clock == 0) { //if time is up
-//       clearInterval(trivia.countDown); //stops our timer at 0. Don't want -1 ...
-//       trivia.triggerAnswer(false); //marks the answer as incorrect in trivia library
-//     }
-//   }
-//   else clearInterval(trivia.countDown);
-// }, 100);//100 is the time interval in milliseconds
-
 
