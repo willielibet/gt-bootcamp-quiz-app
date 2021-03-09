@@ -8,46 +8,12 @@
     <link rel="stylesheet" href="./css/style.css"/>
 </head>
 <body>
-    <!-- Timer Source: https://www.youtube.com/watch?v=9-5URe9CykA-->
-    <text>Time: <text id="time001">40</text></text><br/>
-    <!-- <button id="incorrect">Simulate Incorrect Answer</button> --> 
-    <div class="quiz-container" id="quiz">
-        <div class="quiz-header">
-            <h2 id="question">Question Text</h2>
-            <ul>
-                <li>
-                    <!-- radio inputs with a name and class of answer -->
-                    <input type="radio" name="answer" id="a" class="answer"></input>
-                    <!-- the labels match the id of the inputs -->
-                    <label for="a" id="a_text">Question</label>
-                </li>
+<!-- timer: clicking on Begin Quiz starts the quiz and the timer -->
+<div id="begin-quiz">
+    <button class="beginButton" onclick="startTimer();"> Begin Quiz</button>
+</div>
 
-                <li>
-                    <input type="radio" name="answer" id="b" class="answer"></input>
-                    <label for="b" id="b_text">Question</label>
-                </li>
-
-                <li>
-                    <input type="radio" name="answer" id="c" class="answer"></input>
-                    <label for="c" id="c_text">Question</label>
-                </li>
-
-                <li>
-                    <input type="radio" name="answer" id="d" class="answer"></input>
-                    <label for="d" id="d_text">Question</label>
-                </li>
-            </ul>
-        </div>
-        <!-- <span id="timerDisplay"> </span> -->
-        <!-- <button id="submit" id="timerDisplay" id="incorrect">Submit</button> -->
-        <button id="submit">Submit</button>
-
-        <br>
-        <div id="begin-quiz">
-            <button class="beginButton" onclick="startTimer();"> Begin Quiz</button>
-        </div>
-
-    </div>
-    <script src="./js/script.js"></script>
+</div>
+<script src="./js/script.js"></script>
 </body>
 </html>
