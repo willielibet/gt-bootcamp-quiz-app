@@ -50,19 +50,20 @@ let currentQuestion = 0
 let score = 0
 
 loadQuiz()
-window.location.replace("quiz.html");
+
 c = 40;
 
 function loadQuiz() {
     //to deselect any selected answer that might remain selected after we reload the web app.
     //the deselectAnswers() function clears any selected answer after reloading the browser.
     deselectAnswers()
+    
 
     // this is one of the objects in the area.
     const currentQuizQuestion = quizQuestions[currentQuestion]
     
     // getting the question values out of the quizData array.  
-    questionEl.innerText = currentQuestion.question;
+    questionEl.innerText = currentQuizQuestion.question;
 
     //getting the a,b,c, and d values for each answer and putting
     //them into the a_text ID, the b_text ID, and so on.
@@ -134,8 +135,7 @@ submitBtn.addEventListener('click', () => {
             <h2>You answered ${score}/${quizQuestions.length} questions.<br/>
             Your score is ${c} points</h2>
 
-            
-            <button onclick="location.reload()
+            <button onclick="location.reload("../index.html")
             ">Reload</button>
             `
         } //<button onclick="location.reload() ==> this button reloads the quiz app to start over.
@@ -144,7 +144,7 @@ submitBtn.addEventListener('click', () => {
 
 //timer
 function timer001() {
-    window.location.replace("quiz.html");
+    // window.location.replace("quiz.html");
     c = c - 1;
     if (c < 40) {
         time001.innerHTML = c;
@@ -158,11 +158,11 @@ function timer001() {
 } //closes timer001() function
 
 //Source: https://www.sitepoint.com/community/t/want-timer-to-start-on-button-click-always-starts-on-load-why/291783/3
-function startTimer() {
-    update = setInterval(function(){timer001()}, 1000);
-    // window.location.replace("quiz.html");
-}
-
+// function startTimer() {
+//     update = setInterval(function(){timer001()}, 1000);
+//     // window.location.replace("quiz.html");
+// }
+update = setInterval("timer001()", 1000);
 
 // var timeLimit = 10;
 // var startTime = Date.now(); //get the time at the moment a user first sees the question
