@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./css/style.css"/>
 </head>
 <body>
+    <!-- Timer Source: https://www.youtube.com/watch?v=9-5URe9CykA-->
+    <text>Time: <text id="time001">40</text></text><br/>
+    <!-- <button id="incorrect">Simulate Incorrect Answer</button> --> 
     <div class="quiz-container" id="quiz">
         <div class="quiz-header">
             <h2 id="question">Question Text</h2>
@@ -35,7 +38,15 @@
                 </li>
             </ul>
         </div>
+        <!-- <span id="timerDisplay"> </span> -->
+        <!-- <button id="submit" id="timerDisplay" id="incorrect">Submit</button> -->
         <button id="submit">Submit</button>
+
+        <br>
+        <div id="begin-quiz">
+            <button class="beginButton" onclick="startTimer();"> Begin Quiz</button>
+        </div>
+
     </div>
     <script src="./js/script.js"></script>
 </body>
