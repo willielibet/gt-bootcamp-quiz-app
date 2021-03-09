@@ -115,8 +115,8 @@ submitBtn.addEventListener('click', () => {
             score++
         } else {
 
-        // if(answer !== quizData[currentQuiz].correct) {
-            //take time off
+        // if(answer !== quizQuestions[currentQuestion].correct) {
+            //take time off if answer to question is wrong.
             c = c - 5;
         }
 
@@ -133,9 +133,8 @@ submitBtn.addEventListener('click', () => {
         quiz.innerHTML = `  
             <h2>You answered ${score}/${quizQuestions.length} questions.<br/>
             Your score is ${c} points</h2>
-            <a href="./quiz.html">
-            <button onclick="location.reload("index.html")
-            ">Reload</button>
+            <a href="../index.html">
+            <button>Reload</button>
             `
         } //<button onclick="location.reload() ==> this button reloads the quiz app to start over.
     } //closing if(currentQuiz < quizData.length) {
@@ -143,7 +142,6 @@ submitBtn.addEventListener('click', () => {
 
 //timer
 function timer001() {
-
     c = c - 1;
     if (c < 40) {
         time001.innerHTML = c;
@@ -151,6 +149,7 @@ function timer001() {
     
     if ( c === 0) {
         window.clearInterval(update);
+        //keeps timer from counting down into negative numbers.
         c = "-";
         quiz.innerHTML = "Time is up!"
     }
