@@ -134,14 +134,14 @@ submitBtn.addEventListener('click', () => {
             <h2>You answered ${score}/${quizQuestions.length} questions.<br/>
             Your score is ${c} points</h2>
             <a href="../index.html">
-            <button>Reload</button>
+            <button>Reload</button></a>
             `
         } //<button onclick="location.reload() ==> this button reloads the quiz app to start over.
     } //closing if(currentQuiz < quizData.length) {
 })
 
 //timer
-function timer001() {
+function timer() {
     c = c - 1;
     if (c < 40) {
         time001.innerHTML = c;
@@ -151,7 +151,11 @@ function timer001() {
         window.clearInterval(update);
         //keeps timer from counting down into negative numbers.
         c = "-";
-        quiz.innerHTML = "Time is up!"
+        quiz.innerHTML = `  
+        <h2 id="timeUp">Your time is up!.<br/>
+        <a href="../index.html">
+        <button>Reload</button></a>
+        `
     }
 } //closes timer001() function
 
@@ -160,5 +164,5 @@ function timer001() {
 //     update = setInterval(function(){timer001()}, 1000);
 // 
 // }
-update = setInterval("timer001()", 1000);
+update = setInterval("timer()", 1000);
 

@@ -82,6 +82,7 @@ button:focus {
 }
 
 #word_time,
-#time001 {
+#time001,
+#timeUp {
   font-size: 30px;
 }
