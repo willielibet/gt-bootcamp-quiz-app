@@ -68,6 +68,10 @@ select {
   clear: both;
 }
 
+#final-score-card {
+  height: 29.4vw;
+}
+
 #msg {
   display: block;
   min-height: 100px;

@@ -137,7 +137,7 @@ submitBtn.addEventListener('click', () => {
         //let newScore = JSON.stringify(c);
         //localStorage.setItem("totalScore", newScore);
         
-
+        localStorage.setItem("cValue",c);
         quiz.innerHTML = `  
             <h2>You answered ${score}/${quizQuestions.length} questions.<br/>
             Your score is ${c} points</h2>
@@ -180,156 +180,8 @@ function timer() {
 // }
 update = setInterval("timer()", 1000);
 
-//export { c };
-// var student = document.getElementById("initials");
-// var score = document.getElementById("score");
 
-// var initials = document.getElementById("initi");
-// var saveButton = document.getElementById("save");
-// var savedName = document.getElementById("saved-name");
-
-// function saveLastGrade() {
-//   // Save related form data as an object
-//   var userInitialsScore = {
-//     // student: student.value,
-//     score: c,
-//     initials: initials.value.trim()
-//   };
-//   // Use .setItem() to store object in storage and JSON.stringify to convert it as a string
-//   localStorage.setItem("userInitialsScore", JSON.stringify(userInitialsScore));
-// }
-
-// function renderLastGrade() {
-//   // Use JSON.parse() to convert text to JavaScript object
-//   var lastScore = JSON.parse(localStorage.getItem("userInitialsScore"));
-//   // Check if data is returned, if not exit out of the function
-//   if (lastScore !== null) {
-// //   document.getElementById("saved-name").innerHTML = lastGrade.student;
-//   document.getElementById("saved-grade").innerHTML = lastScore.score;
-//   document.getElementById("saved-comment").innerHTML = lastScore.initials;
-//   } else {
-//     return;
-//   }
-// }
-
-// saveButton.addEventListener("click", function(event) {
-// event.preventDefault();
-// saveLastGrade();
-// renderLastGrade();
-// });
-
-// // The init() function fires when the page is loaded 
-// function init() {
-//   // When the init function is executed, the code inside renderLastGrade function will also execute
-//   renderLastGrade();
-// }
-// init();
-
-
-
-
-
-
-
-
-
-
-// const saveInitials = e => {
-//     //alert("save initials");
-//     let formData = {
-//         initials: document.getElementById('initials').value,
-//         // totalScore: document.getElementById('totalScore').value
-//     }
-//     console.log("totalscore " + totalScore)
-
-//     //let initialsValue = localStorage.setItem('formData', JSON.stringify(formData));
-//     localStorage.setItem('formData', JSON.stringify(formData));
-//     //console.log(initialsValue)
-//     dispData();
-//     e.preventDefault();
-
-//     function dispData(){
-//         //localStorageData = JSON.parse(localStorage.getItem('formData'));
-//         //console.log(localStorageData)
-
-//         if(localStorage.getItem('formData')) {
-//             let {initials, totalScore} = JSON.parse(localStorage.getItem('formData'));
-//             //let {c} = JSON.parse(localStorage.getItem('c'));
-//             var output = document.getElementById('output');
-//             output.innerHTML = `
-//             <table>
-//                 <tbody>
-//                     <tr>
-//                         <td>Initials</td>
-//                         <td>${initials}</td>
-//                     </tr>
-//                     <tr>
-//                         <td>Final Score</td>
-//                         <td>${totalScore}</td>
-//                     </tr>
-//                 </tbody>
-//             </table>
-//             `;
-
-//         }
-//     }
-// }
-
-
-
-
-
-
-
-
-
-
-
-//local storage initials and score
-// let input_initials_key      = document.getElementById('input_initials_key');
-// let input_score_key         = document.getElementById('input_score_key');
-// let save_value              = document.getElementById('save_value');
-// let read_localstorage_value = document.getElementById('read_localstorage_value');
-// let delete_data             = document.getElementById('delete_data');
-// let read_all_data           = document.getElementById('read_all_data');
-
-// function storage() {
-
-//     if (input_initials_key === null) {
-
-//     console.log("Input is empty");
-    
-//     } else {
-//         console.log("i am the value of c inside the else storage function " + c);
-
-//         var finalScore = {
-//             name: input_initials_key,
-//             score: c
-//         }
-//     }
-
-//     // let newScore = JSON.stringify(c);
-//     // let finalScore = localStorage.setItem("totalScore", newScore);
-//     // console.log("i am the value of c inside the storage function " + c);
-
-//     save_value.onclick=function() {
-//         localStorage.setItem(input_initials_key.value,finalScore);
-//     }
-
-//     // read_localstorage.onclick=function() {
-//     //     localstorage_value.textContent = localStorage.getItem("initials_score")
-//     // }
-
-//     delete_data.onclick=function() {
-//         localStorage.removeItem("willie01")
-//     }
-
-//     read_all_data.onclick=function() {
-//         let keys=Object.keys(localstorage);
-//         console.log(keys);
-//     }
-
-// }
-
-//save to local storage
-
+// window.onload = function() {
+//     var getInput = prompt("Hey type something here: ");
+//     localStorage.setItem("cValue",c);
+//  }

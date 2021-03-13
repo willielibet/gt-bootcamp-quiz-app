@@ -12,7 +12,7 @@ function saveScore() {
   var userInitialsScore = {
     // student: student.value,
     initials: initials.value,
-    score: 10
+    score: localStorage.getItem("cValue")
   };
 
   // Use .setItem() to store object in storage and JSON.stringify to convert it as a string
@@ -25,8 +25,8 @@ function renderLastGrade() {
   // Check if data is returned, if not exit out of the function
   if (fScore !== null) {
 //   document.getElementById("saved-name").innerHTML = lastGrade.student;
-  document.getElementById("saved-grade").innerHTML = fScore.score;
   document.getElementById("saved-initials").innerHTML = fScore.initials;
+  document.getElementById("saved-grade").innerHTML = fScore.score;
   } else {
     return;
   }
@@ -45,4 +45,4 @@ function init() {
 }
 init();
 
-<script type="module" src="script.js"></script>
+//<script type="module" src="script.js"></script>
