@@ -64,12 +64,13 @@ button {
   color: #fff;
   border: none;
   display: block;
-  width: 100%;
+  width: 80%;
   cursor: pointer;
   font-size: 1.1rem;
   /* inherit the poppins font from the box */
   font-family: inherit;
   padding: 1.3rem;
+  margin-left: 10%;
 }
 
 button:hover {
@@ -85,4 +86,26 @@ button:focus {
 #time001,
 #timeUp {
   font-size: 30px;
+}
+
+#quizChallenge {
+  color: mediumaquamarine;
+  position: fixed;
+  font-size: 50px;
+  top: 5%;
+  left: 44%;
+  margin-top: 75px;
+  margin-left: -60px;
+}
+
+.beginButton {
+  margin-top: 200px;
+  font-size: 50px;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* take underline off links */
+a:link {
+  text-decoration: none;
 }
