@@ -1,8 +1,3 @@
-//import { c } from './script.js';
-
-
-// var student = document.getElementById("initials");
-// var score = document.getElementById("score");
 var initials = document.getElementById("init");
 var saveButton = document.getElementById("save");
 var savedName = document.getElementById("saved-initials");
@@ -10,7 +5,6 @@ var savedName = document.getElementById("saved-initials");
 function saveScore() {
   // Save related form data as an object
   var userInitialsScore = {
-    // student: student.value,
     initials: initials.value,
     score: localStorage.getItem("cValue")
   };
@@ -44,5 +38,3 @@ function init() {
   renderLastGrade();
 }
 init();
-
-//<script type="module" src="script.js"></script>
