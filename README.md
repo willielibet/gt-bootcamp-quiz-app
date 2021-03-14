@@ -9,7 +9,7 @@
 
 ## 1. Overview:
 
-To help familiarize you with these tests and allow you to use the skills covered in this unit, this week’s homework invites you to build a timed coding quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface.
+This is a timed-coding quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code. It will have a clean, polished, and responsive user interface. The quiz has 10 questions. Ten seconds are taken off for each wrong answer. If you run out of time, you get zero. Otherwise, your score is equal to the time when you finished answering all questions.
 
 ## 2. Directory Structure
 
@@ -17,7 +17,7 @@ To help familiarize you with these tests and allow you to use the skills covered
 
 ## 3. Mock-Up
 
-The following image shows the web application's appearance and functionality. The Coding-Quiz Challenge has 10 questions and 10 points off per wrong answer. These are some pictures of the quiz.
+The following image shows the web application's appearance and functionality:
 
 ![Home paage](./assets/01_home_page.png)
 ![Sample question 1](./assets/02_question_sample.png)
