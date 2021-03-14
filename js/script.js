@@ -172,7 +172,7 @@ submitBtn.addEventListener('click', () => {
         quiz.innerHTML = `  
             <h2>You answered ${score}/${quizQuestions.length} questions.<br/>
             Your score is ${c} points</h2>
-            <a href="../finalScore.html">
+            <a href="../html/finalScore.html">
             <button>Enter initials...</button></a>
             `
         } //<button onclick="location.reload() ==> this button reloads the quiz app to start over.
