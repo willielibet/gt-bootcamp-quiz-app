@@ -134,9 +134,8 @@ submitBtn.addEventListener('click', () => {
         //then take the quiz element, which is the entire wrapper, and set the
         //entire HTML to what is inside the backticks ``.
 
-        //let newScore = JSON.stringify(c);
-        //localStorage.setItem("totalScore", newScore);
-        
+        // source:
+        // https://stackoverflow.com/questions/27765666/passing-variable-through-javascript-from-one-html-page-to-another-page
         localStorage.setItem("cValue",c);
         quiz.innerHTML = `  
             <h2>You answered ${score}/${quizQuestions.length} questions.<br/>

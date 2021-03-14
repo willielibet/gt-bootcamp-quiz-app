@@ -64,13 +64,13 @@ button {
   color: #fff;
   border: none;
   display: block;
-  width: 80%;
+  width: 40%;
   cursor: pointer;
   font-size: 1.1rem;
   /* inherit the poppins font from the box */
   font-family: inherit;
   padding: 1.3rem;
-  margin-left: 10%;
+  margin-left: 32%;
 }
 
 button:hover {
@@ -83,7 +83,7 @@ button:focus {
 }
 
 #word_time,
-#time001,
+#time,
 #timeUp {
   font-size: 30px;
 }
@@ -93,19 +93,32 @@ button:focus {
   position: fixed;
   font-size: 50px;
   top: 5%;
-  left: 44%;
+  left: 40%;
   margin-top: 75px;
-  margin-left: -60px;
+  margin-left: -80px;
+  text-align: center;
 }
 
 .beginButton {
-  margin-top: 200px;
+  margin-top: 350px;
   font-size: 50px;
   list-style-type: none;
   text-decoration: none;
+  text-align: center;
 }
 
 /* take underline off links */
 a:link {
   text-decoration: none;
+}
+
+#landing-page {
+  font-size: 2vw;
+  position: fixed;
+  /* top: 20%; */
+  left: 20%;
+  margin-top: -120px;
+  margin-left: -120px;
+  width: 80%;
+  text-align: center;
 }
