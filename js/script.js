@@ -194,11 +194,13 @@ function timer() {
         window.clearInterval(update);
         //keeps timer from counting down into negative numbers.
         c = "-";
-    
+        localStorage.setItem("cValue",0);
         quiz.innerHTML = `  
         <h2 id="timeUp">Your time is up!<br/>
-        <a href="../index.html">
-        <button>Reload</button></a>
+        <h2>You answered ${score}/${quizQuestions.length} questions.<br/>
+            Your score is 0 points</h2>
+            <a href="../html/finalScore.html">
+            <button>Enter initials...</button></a>
         `
     }
 } //closes time() function
