@@ -13,7 +13,7 @@ To help familiarize you with these tests and allow you to use the skills covered
 
 ## 2. Directory Structure
 
-![Table of Contents](./assets/table_of_contents.png)
+![Table of Contents](./assets/06table_of_contents.png)
 
 ## 3. Mock-Up
 
