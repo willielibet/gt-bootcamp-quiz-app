@@ -113,7 +113,7 @@ submitBtn.addEventListener('click', () => {
     if(answer) {
         //then check if that answer is equal to the correct answer.
         //the correct answer is in the quizData array having correct as key.
-        if(answer === quizQuestions[currentQuestion].correct) {
+        if(answer === quizQuestions[currentQuestion].correct) {   
             //so, increment the score by 1 point.
             score++
         } else {
