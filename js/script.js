@@ -26,12 +26,44 @@ const quizQuestions = [
         correct: "a",
     },
     {
-        question: "what year was JavaScript launched?",
+        question: "What year was JavaScript launched?",
         a: "1996",
         b: "1995",
         c: "1994",
         d: "none of the above",
         correct: "b",
+    },
+    {
+        question: "Commonly used data types DO NOT include",
+        a: "strings",
+        b: "booleans",
+        c: "alerts",
+        d: "none of the above",
+        correct: "c",
+    },
+    {
+        question: "Arrays in JavaScript can be used to store",
+        a: "numbers and strings",
+        b: "other arrays",
+        c: "booleans",
+        d: "all of the above",
+        correct: "d",
+    },
+    {
+        question: "The condition in an if/else statement is enclosed within",
+        a: "quotes",
+        b: "curly brackets",
+        c: "parenthesis",
+        d: "square brackets",
+        correct: "b",
+    },
+    {
+        question: "A pack of lions is called a",
+        a: "group",
+        b: "package",
+        c: "pride",
+        d: "flock",
+        correct: "c",
     },
 ]
 
@@ -54,7 +86,7 @@ let score = 0
 loadQuiz()
 
 //initializing the timer counter
-c = 30;
+c = 100;
 
 function loadQuiz() {
     //to deselect any selected answer that might remain selected after we reload the web app.
@@ -120,7 +152,7 @@ submitBtn.addEventListener('click', () => {
 
         // if(answer !== quizQuestions[currentQuestion].correct) {
             //take five seconds off, if answer to question is wrong.
-            c = c - 5;
+            c = c - 10;
         }
 
         //then go on from the current question to the next question.
@@ -146,7 +178,6 @@ submitBtn.addEventListener('click', () => {
         } //<button onclick="location.reload() ==> this button reloads the quiz app to start over.
     } //closing if(currentQuiz < quizData.length) {
 
-        //storage();
 })
 
 //timer
@@ -155,7 +186,7 @@ function timer() {
     c = c - 1;
     } 
 
-    if (c < 40) {
+    if (c < 100) {
         time.innerHTML = c;
     }
     
